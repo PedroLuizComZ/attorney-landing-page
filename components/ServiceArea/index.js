@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from '@material-ui/core'
-import Link from 'next/link'
 import { Parallax } from 'react-parallax';
 import PeopleAltTwoToneIcon from '@material-ui/icons/PeopleAltTwoTone';
 import PermIdentityTwoToneIcon from '@material-ui/icons/PermIdentityTwoTone';
@@ -13,38 +12,38 @@ import SectionTitle from '../Title'
 const services = [
     {
         icon: <PeopleAltTwoToneIcon />,
-        title: 'Family Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of ',
+        title: 'Advocacia Extrajudicial',
+        content: 'Divórcio, Inventário, Elaboração e Revisão de Contratos, Conciliação e Mediação',
         id: 1
     },
     {
         icon: <PermIdentityTwoToneIcon />,
-        title: 'Personal Injury',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of ',
+        title: 'Apoio Estratégica e/ou de Volume: ',
+        content: 'Elaboração de peças processuais e/ou pesquisa jurisprudencial;',
         id: 2
     },
     {
         icon: <AccessibilityTwoToneIcon />,
-        title: 'Business Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of ',
+        title: 'Consultoria Empresarial',
+        content: 'Controladoria, Gestão, Projetos e Treinamentos, para Departamentos Jurídicos e Escritórios de Advocacia;',
         id: 3
     },
     {
         icon: <AssignmentIndTwoToneIcon />,
-        title: 'Criminal Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of ',
+        title: 'Audiências e Diligências',
+        content: 'Análise prévio do caso concreto, alinhamento com o cliente, relatório completo sobre o ato',
         id: 4
     },
     {
         icon: <CastForEducationTwoToneIcon />,
-        title: 'Education Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of ',
+        title: 'Correspondência',
+        content: 'Jurídica Presencial e/ou Virtual: ',
         id: 5
     },
     {
         icon: <HomeWorkTwoToneIcon />,
-        title: 'Real Estate Law',
-        content: 'It is a long established fact that a reader will be distracted by the readable content of ',
+        title: 'Cidades de Atuação',
+        content: 'Mairiporã, Atibaia, Bragança Paulista, Piracaia, Nazaré Paulista, Jarinu, Campo Limpo Paulista, Várzea Paulista, Jundiaí, Itatiba, Louveira, Vinhedo, Valinhos e Campinas',
         id: 6
     },
 ]
@@ -72,10 +71,7 @@ const ServiceArea = ({ className = '', title, subTitle }) => {
                             </Grid>
                             <Grid className="serviceContent">
                                 <h3>
-                                    <Link
-                                        href={`/practice/[id]`}
-                                        as={`/practice/${service.id}`}><a>{service.title}</a>
-                                    </Link>
+                                  {service.title}
                                 </h3>
                                 <p>{service.content}</p>
                             </Grid>

@@ -1,20 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 import { Grid, Hidden } from '@material-ui/core'
-import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 
 const sliders = [
     {
-        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,',
+        text: 'Controller Jurídico -  Reestruturação de Departamentos Cível e Trabalhista: 2011-2016\n Readequação de equipe de advogados e estagiários, com viabilização de desenvolvimento de habilidades pessoais e profissionais\n Implantação de fluxogramas e organogramas\n Implantação de projetos e procedimentos; Implantação de software (EBTJURIS) de gestão de processos\n Utilização de software (LYSIS) de gestão de processos\n Coordenação das atividades\n Desenvolvimento de relacionamento e liderança, para engajamento contínuo dos colaboradores e resultados de excelência\n Produtividade e alta performance pessoal e das equipes.',
         images: '/images/testimonial/2.png',
-        title: 'Jhony Goaver',
-        subTitle: 'CEO of American BDS'
-    },
-    {
-        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,',
-        images: '/images/testimonial/2.png',
-        title: 'Jhony Goaver',
-        subTitle: 'CEO of American BDS'
     }
 ]
 const settings = {
@@ -33,7 +24,7 @@ const Testmonial = ({ className = '' }) => {
             <Grid container className="container">
                 <Grid item md={4} sm={6} xs={12}>
                     <Grid className="testimonialImages">
-                        <img src='/images/testimonial/1.png' alt="" />
+                        <img src='/images/avatar-perfil-v1.2.png' alt="" />
                     </Grid>
                 </Grid>
                 <Hidden smDown>
@@ -41,22 +32,12 @@ const Testmonial = ({ className = '' }) => {
                 </Hidden>
                 <Grid item md={7} sm={6} xs={12}>
                     <Grid className="testimonialContent">
-                        <span>What People Say</span>
-                        <h2>Client Testimonial</h2>
+                        <h2>Case de sucesso</h2>
                         <Slider className="testmonialSlider"
                             {...settings}>
                             {sliders.map((slider, i) => (
                                 <Grid key={i} className="slideItem">
-                                    <p><FormatQuoteIcon /> {slider.text}</p>
-                                    <Grid className="thumbWrap">
-                                        <Grid className="thumbImg">
-                                            <img src={slider.images} alt="" />
-                                        </Grid>
-                                        <Grid className="imgContent">
-                                            <h4>{slider.title}</h4>
-                                            <span>{slider.subTitle}</span>
-                                        </Grid>
-                                    </Grid>
+                                    <p> {slider.text}</p>
                                 </Grid>
                             ))}
                         </Slider>

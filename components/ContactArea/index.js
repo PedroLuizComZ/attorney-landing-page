@@ -5,7 +5,6 @@ import { Grid } from '@material-ui/core'
 const ContactArea = ({ className = '' }) => {
     return (
         <Parallax
-            bgImage="/images/contact/1.jpg"
             bgImageAlt="the cat"
             contentClassName={`contactArea ${className}`}
             strength={200}>

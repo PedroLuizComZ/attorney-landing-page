@@ -1,94 +1,39 @@
-import React, { Fragment } from 'react'
-import Head from 'next/head'
+import React, { Fragment } from "react";
+import Head from "next/head";
 
-// components 
-import HeroSlider from '../components/HeroSlider'
-import Service from '../components/Service'
-import About from '../components/About'
-import ServiceArea from '../components/ServiceArea'
-import Portfolio from '../components/Portfolio'
+// components
+import HeroSlider from "../components/HeroSlider";
+import Service from "../components/Service";
+import About from "../components/About";
+import ServiceArea from "../components/ServiceArea";
 import Testmonial from "../components/Testmonial";
-import ContactArea from '../components/ContactArea'
-import TeamMember from '../components/TeamMember'
-import CounterArea from '../components/CounterArea'
-import BlogArea from '../components/BlogArea'
-import NewsLetter from '../components/Newsletter'
 
-const aboutText = ['Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at', 'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum'
-]
-
-const portfolio = [
-    {
-        image: '/images/studies/1.jpg',
-        title: 'General Service',
-        subtitle: 'Corporate',
-        id: 1
-    },
-    {
-        image: '/images/studies/2.jpg',
-        title: 'Personal Issue',
-        subtitle: 'General',
-        id: 2
-    },
-    {
-        image: '/images/studies/3.jpg',
-        title: 'Business Accounting',
-        subtitle: 'Business',
-        id: 3
-    },
-    {
-        image: '/images/studies/4.jpg',
-        title: 'Accounting issue',
-        subtitle: 'Criminal',
-        id: 4
-    },
-    {
-        image: '/images/studies/5.jpg',
-        title: 'Business Accounting',
-        subtitle: 'Family Issue',
-        id: 5
-    }
-]
-
+const aboutText = [
+  "Profissional atuante há 20 anos perante o contencioso estratégico e de volume, nas Justiças Estadual e Federal, com representação/assistência de empresas nos ramos alimentício, energia elétrica e telecomunicações.",
+  'Experiências na gerência e coordenação de equipes em escritórios de advocacia de grande e médio porte, mediante planejamento, gestão e supervisão das execuções das atividades relativas; com prática no desenvolvimento de procedimentos junto aos departamentos cível, trabalhista, empresarial consultivo e empresarial contencioso. Conhecimento em implantação e utilização de software de gestão de processos.',
+  'Habilidades para desenvolvimento de profissionais que compõe equipe, cuidado na qualidade das relações no ambiente de trabalho, utilização de feedback e feedfoward, comunicação efetiva e, também, para realização de reuniões eficazes.',
+];
 
 const Home = () => {
-    return (
-        <Fragment>
-            <Head>
-                <title>Home page</title>
-            </Head>
-            <HeroSlider />
-            <Service className="bgColor" />
-            <About
-                title="About Us"
-                images="/images/about/2.jpg"
-                signature="/images/about/1.png"
-                pragraphs={aboutText}
-            />
-            <ServiceArea
-                title="How Can We Help You"
-                subTitle="Area Of Practice"
-                className="bgWhite"
-            />
-            <Portfolio
-                title="Our Resent Case Studies"
-                subTitle="Here Our Best Work"
-                portfolioItem={portfolio}
-            />
-            <Testmonial />
-            <ContactArea />
-            <TeamMember
-                title="Qualified Attorneys "
-                subTitle="Meet Our Experts"
-                slider={true}
-            />
-            <CounterArea />
-            <BlogArea
-                title="Latest News"
-                subTitle="From Our Blog"
-            />
-            <NewsLetter />
-        </Fragment>
-    )
-}
-export default Home
+  return (
+    <Fragment>
+      <Head>
+        <title>Renata Fusco</title>
+      </Head>
+      <HeroSlider />
+      <Service className="bgColor" />
+      <About       
+        title="Sobre mim"
+        images="/images/about/2.jpg"
+        pragraphs={aboutText}
+      />
+      <ServiceArea
+        title="Como posso te ajudar?"
+        subTitle="Areas de atuação"
+        className="bgWhite"
+      />
+      <Testmonial />
+    </Fragment>
+  );
+};
+export default Home;

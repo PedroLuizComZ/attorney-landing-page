@@ -7,7 +7,6 @@ import '../styles/style.scss';
 
 
 // compoennst 
-import HeaderTop from '../components/HeaderTop';
 import HeaderBottom from '../components/HeaderBottom';
 import FooterArea from '../components/FooterArea';
 
@@ -15,7 +14,6 @@ const MyApp = ({ Component, pageProps }) => {
     return (
         <Provider store={store}>
             <header className="headerArea">
-                <HeaderTop className="headerTop" />
                 <HeaderBottom className="headerBottomArea" />
             </header>
 

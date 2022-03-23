@@ -7,33 +7,11 @@ import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 
 const heroSliders = [
     {
-        images: '/images/slider/slide-4.jpg',
-        title: 'We Fight For Your Justice',
-        subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
-        button: 'Contact us now'
-    },
-    {
-        images: '/images/slider/slide-5.jpg',
-        title: 'We Fight For Your Justice',
-        subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
-        button: 'Contact us now'
-    },
-    {
-        images: '/images/slider/slide-2.jpg',
-        title: 'We Fight For Your Justice',
-        subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
-        button: 'Contact us now'
-    },
-    {
-        images: '/images/slider/slide-1.jpg',
-        title: 'We Fight For Your Justice',
-        subTitle: 'As Like A Friend.',
-        text: 'The Most Talented Law Frim',
-        button: 'Contact us now'
-    },
+        images: '/images/slider/slide-1.png',
+        title: 'Excelência em muitas',
+        subTitle: 'áreas do Direito',
+        text: 'R R FUSCO SOCIEDADE INDIVIDUAL DE ADVOCACIA',
+    }
 ]
 
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
@@ -102,9 +80,6 @@ const HeroSlider = ({ className = '' }) => {
                             <Grid item lg={8} xs={12}>
                                 <p>{slider.text}</p>
                                 <h2><span>{slider.title}</span> <span>{slider.subTitle}</span></h2>
-                                <Link href="/contact">
-                                    <Button className="btnStyle" component="a">{slider.button}</Button>
-                                </Link>
                             </Grid>
                         </Grid>
                     </Grid>

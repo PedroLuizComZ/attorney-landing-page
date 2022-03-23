@@ -1,22 +1,15 @@
-import React, { useState } from 'react'
+import React  from 'react'
 import Link from 'next/link'
-import PlayArrowTwoToneIcon from '@material-ui/icons/PlayArrowTwoTone';
 import { Button, Grid } from '@material-ui/core'
 
-const About = ({ subTitle, title, videoId, className = '', signature, pragraphs, images, changeOrder = "" }) => {
-    const [video, setVideo] = useState(false)
+const About = ({ subTitle, title, className = '', signature, pragraphs, images}) => {
     return (
-        <Grid className={`aboutArea ${className}`}>
+        <Grid className={`aboutArea ${className}`} id={'sobre'}>
             <Grid container spacing={4} className="container">
                 <Grid item md={6} xs={12}
                     className="changeOrder">
                     <Grid className="aboutImageWrap">
                         <img src={images} alt="" />
-                        {videoId && <Button
-                            onClick={() => setVideo(true)}
-                            className="playBtn">
-                            <PlayArrowTwoToneIcon
-                            /></Button>}
                     </Grid>
                 </Grid>
                 <Grid item md={6} xs={12}>
@@ -26,9 +19,6 @@ const About = ({ subTitle, title, videoId, className = '', signature, pragraphs,
                         {pragraphs.map(text => (
                             <p key={text}>{text}</p>
                         ))}
-                        <Link href='/about'>
-                            <Button component="a" className="btnStyle">More About Us..</Button>
-                        </Link>
                         {signature && <Grid className="signature">
                             <img src={signature} alt="" />
                         </Grid>}
