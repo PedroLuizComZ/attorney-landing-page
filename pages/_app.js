@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import { Provider } from "react-redux";
-import store from "../store";
 import "slick-carousel/slick/slick.scss";
 import "react-modal-video/scss/modal-video.scss";
 import "../styles/style.scss";
@@ -19,14 +17,14 @@ const MyApp = ({ Component, pageProps }) => {
   }
 
   return (
-    <Provider store={store}>
+    <>
       <header className="headerArea">
         <HeaderBottom className="headerBottomArea" />
       </header>
-
       <Component {...pageProps} />
       <FooterArea />
-    </Provider>
+    </>
+
   );
 };
 

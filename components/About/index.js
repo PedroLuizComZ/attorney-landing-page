@@ -1,6 +1,5 @@
 import React  from 'react'
-import Link from 'next/link'
-import { Button, Grid } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 
 const About = ({ subTitle, title, className = '', signature, pragraphs, images}) => {
     return (

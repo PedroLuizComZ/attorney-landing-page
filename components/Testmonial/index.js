@@ -1,13 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import { Grid, Hidden } from '@material-ui/core'
-
-const sliders = [
-    {
-        text: 'Controller Jurídico -  Reestruturação de Departamentos Cível e Trabalhista: 2011-2016\n Readequação de equipe de advogados e estagiários, com viabilização de desenvolvimento de habilidades pessoais e profissionais\n Implantação de fluxogramas e organogramas\n Implantação de projetos e procedimentos; Implantação de software (EBTJURIS) de gestão de processos\n Utilização de software (LYSIS) de gestão de processos\n Coordenação das atividades\n Desenvolvimento de relacionamento e liderança, para engajamento contínuo dos colaboradores e resultados de excelência\n Produtividade e alta performance pessoal e das equipes.',
-        images: '/images/testimonial/2.png',
-    }
-]
 const settings = {
     dots: true,
     infinite: true,
@@ -20,7 +13,7 @@ const settings = {
 };
 const Testmonial = ({ className = '' }) => {
     return (
-        <Grid className={`testmonialArea ${className}`}>
+        <Grid className={`testmonialArea ${className}`} id={'case-de-sucesso'}>
             <Grid container className="container">
                 <Grid item md={4} sm={6} xs={12}>
                     <Grid className="testimonialImages">
@@ -35,11 +28,23 @@ const Testmonial = ({ className = '' }) => {
                         <h2>Case de sucesso</h2>
                         <Slider className="testmonialSlider"
                             {...settings}>
-                            {sliders.map((slider, i) => (
-                                <Grid key={i} className="slideItem">
-                                    <p> {slider.text}</p>
-                                </Grid>
-                            ))}
+                            <Grid className="slideItem">
+                                <p> Controller Jurídico -  Reestruturação de Departamentos Cível e Trabalhista 2011-2016 :</p>
+                                <ul>
+                                    <li>
+                                        Readequação de equipe de advogados e estagiários, com viabilização de desenvolvimento de habilidades pessoais e profissionais
+                                    </li>
+                                    <li>
+                                        Implantação de fluxogramas e organogramas
+                                    </li>
+                                    <li>Implantação de projetos e procedimentos</li>
+                                    <li>Implantação de software (EBTJURIS) de gestão de processos</li>
+                                    <li>Utilização de software (LYSIS) de gestão de processos</li>
+                                    <li>Coordenação das atividades</li>
+                                    <li>Desenvolvimento de relacionamento e liderança, para engajamento contínuo dos colaboradores e resultados de excelência</li>
+                                    <li>Produtividade e alta performance pessoal e das equipes</li>
+                                </ul>
+                            </Grid>
                         </Slider>
                     </Grid>
                 </Grid>

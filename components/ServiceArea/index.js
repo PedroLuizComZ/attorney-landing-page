@@ -52,11 +52,9 @@ const services = [
 const ServiceArea = ({ className = '', title, subTitle }) => {
     return (
         <Parallax
-            bgImage="/images/practice/1.jpg"
-            bgImageAlt="the cat"
             contentClassName={`ourServiceArea ${className}`}
             strength={200}>
-            <Grid container spacing={4} className="container">
+            <Grid container spacing={4} className="container" id={'areas-de-atuacao'}>
                 <Grid item xs={12}>
                     <SectionTitle
                         title={title}

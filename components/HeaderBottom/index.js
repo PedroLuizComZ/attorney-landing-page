@@ -1,8 +1,6 @@
 import React, { useState, Fragment } from "react";
-import { InputAdornment, Grid, TextField, Button } from "@material-ui/core";
+import { Grid,  } from "@material-ui/core";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 
 const HeaderBottom = (props) => {
   const [search, setSearch] = useState();
@@ -14,7 +12,6 @@ const HeaderBottom = (props) => {
   const responsiveHandler = () => {
     setResponsive(!responsive);
   };
-  const router = useRouter();
   return (
     <Fragment>
       {trigger && <Grid className="backdrop" onClick={clickHandler}></Grid>}
@@ -44,36 +41,26 @@ const HeaderBottom = (props) => {
             <ul className="mainMenuWrap">
               <li>
                 <Link href="/#sobre">
-                  <a className={router.pathname == "/about" ? "active" : ""}>
+                  <a>
                     Sobre mim
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/#sobre">
+                <Link href="/#areas-de-atuacao">
                   <a
-                    className={
-                      router.pathname == "/practice" ||
-                      router.pathname == "/practice/[id]"
-                        ? "active"
-                        : ""
-                    }
+                    
                   >
-                    Areas de atuação
+                    Áreas de Atuação
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/#sobre">
+                <Link href="/#case-de-sucesso">
                   <a
-                    className={
-                      router.pathname == "/case-stadies" ||
-                      router.pathname == "/case-stadies/[id]"
-                        ? "active"
-                        : ""
-                    }
+                    
                   >
-                    Caso de Sucesso
+                    Case de Sucesso
                   </a>
                 </Link>
               </li>

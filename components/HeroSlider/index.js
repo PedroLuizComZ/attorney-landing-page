@@ -1,18 +1,8 @@
 import React from 'react'
 import { Button, Grid } from '@material-ui/core';
 import Slider from "react-slick";
-import Link from 'next/link'
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
-
-const heroSliders = [
-    {
-        images: '/images/slider/slide-1.png',
-        title: 'Excelência em muitas',
-        subTitle: 'áreas do Direito',
-        text: 'R R FUSCO SOCIEDADE INDIVIDUAL DE ADVOCACIA',
-    }
-]
 
 const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <Button
@@ -69,24 +59,17 @@ const HeroSlider = ({ className = '' }) => {
     return (
         <Slider className={`heroSliderArea ${className}`}
             {...settings}>
-            {heroSliders.map((slider, i) => (
-
-                <Grid key={i}>
-                    <Grid
-                        className="slideWrapper"
-                        style={{ background: `url(${slider.images}) no-repeat center center / cover` }}
-                    >
-                        <Grid container className="container">
-                            <Grid item lg={8} xs={12}>
-                                <p>{slider.text}</p>
-                                <h2><span>{slider.title}</span> <span>{slider.subTitle}</span></h2>
-                            </Grid>
+            <Grid>
+                <Grid
+                    className="slideWrapper"
+                    style={{ background: `url('/images/slider/slide-1.png') no-repeat center center / cover` }}
+                >
+                    <Grid container className="container">
+                        <Grid item lg={8} xs={12}>
                         </Grid>
                     </Grid>
                 </Grid>
-
-            ))
-            }
+            </Grid>
         </Slider >
     )
 }
