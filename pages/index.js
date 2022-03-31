@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <Fragment>
       <Head>
-        <title>Renata Fusco</title>
+        <title>Fusco Advocacia</title>
       </Head>
       <HeroSlider />
       <About       

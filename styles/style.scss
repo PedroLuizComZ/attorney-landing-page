@@ -187,15 +187,16 @@ body {
         }
 
         h2 {
+            font-size: 30px;
             margin-bottom: 20px;
         }
 
         p {
             margin-bottom: 30px;
-            font-size: 15px;
+            font-size: 20px;
 
             @media (max-width:1200px) {
-                font-size: 14px;
+                font-size: 19px;
                 margin-bottom: 20px;
             }
         }
@@ -880,7 +881,7 @@ body {
 }
 
 .footerArea {
-    background: #151a30;
+    background: #000000;
 
     .footerTopArea {
         padding: 50px 0px 20px;
@@ -2058,7 +2059,15 @@ body {
     padding: 80px 0px 40px;
 
     &.bgWhite {
-        background: #101010;
+        background: #000000;
+    }
+
+    .adicional-container{
+        border-top: 0.2px solid #FFFFFF;
+
+        @media (max-width:1280px) {
+            border-top: 0;
+        }
     }
 
     .serviceWrap {
@@ -2071,8 +2080,7 @@ body {
 
         .serviceIcon {
             float: left;
-            border: 1px solid rgba(192, 181, 150, .5);
-            border-radius: 50%;
+            border: 1px solid #ffffff;
             width: 80px;
             height: 80px;
             display: flex;
@@ -2135,9 +2143,54 @@ body {
                 }
             }
 
-            p {
-                color: #FFFFFF;
-                margin-bottom: 0;
+            ul {
+                padding-left: 15px;
+                list-style: initial;
+                li {
+                    p {
+                        font-size: 18px;
+                        color: #FFFFFF;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .aditional-list{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                
+                @media (min-width: 600px) and (max-width: 1280px) {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                li:nth-child(3n) {
+                    margin-left: 100px;
+                    @media (max-width: 1280px) {
+                        margin-left: 0;
+                    }
+                }
+
+                li:nth-child(3n -1 ) {
+                    margin-left: 55px;
+                    @media (max-width: 1280px) {
+                        margin-left: 0;
+                    }
+                }
+
+                @media (min-width: 600px) and (max-width: 1280px) {
+                    li:nth-child(2n) {
+                        margin-left: 80px;
+                    }
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                @media (max-width: 600px) {
+                    li:nth-child(2n) {
+                        margin-left: 0;
+                    }
+                    grid-template-columns: 1fr;
+                }
             }
         }
     }
