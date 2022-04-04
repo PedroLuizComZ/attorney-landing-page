@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from "react";
-import { Grid,  } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Link from "next/link";
 
 const HeaderBottom = (props) => {
@@ -41,27 +41,22 @@ const HeaderBottom = (props) => {
             <ul className="mainMenuWrap">
               <li>
                 <Link href="/#sobre">
-                  <a>
-                    Sobre mim
-                  </a>
+                  <a>Sobre mim</a>
                 </Link>
               </li>
               <li>
                 <Link href="/#areas-de-atuacao">
-                  <a
-                    
-                  >
-                    Áreas de Atuação
-                  </a>
+                  <a>Áreas de Atuação</a>
                 </Link>
               </li>
               <li>
                 <Link href="/#case-de-sucesso">
-                  <a
-                    
-                  >
-                    Case de Sucesso
-                  </a>
+                  <a>Case de Sucesso</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/#contato">
+                  <a>Contato</a>
                 </Link>
               </li>
             </ul>

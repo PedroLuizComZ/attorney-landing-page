@@ -19,7 +19,7 @@ const menu = {
 
 const FooterArea = () => {
   return (
-    <footer className="footerArea">
+    <footer className="footerArea" id="contato">
       <Grid className="footerTopArea footerBottomArea">
         <Grid container spacing={3} className="container">
           <Grid item lg={6} sm={6} xs={12}>

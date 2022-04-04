@@ -15,7 +15,7 @@ const services = [
     id: 1,
   },
   {
-    title: "Advocacia de Apoio Estratégica e/ou de Volume: ",
+    title: "Advocacia de Apoio Estratégica e/ou de Volume ",
     content: ["Elaboração de peças processuais e/ou pesquisa jurisprudencial"],
     id: 2,
   },
@@ -32,24 +32,22 @@ const services = [
 
 const aditionalInfo = [
   {
-    title: "Correspondência",
+    title: "Correspondência Jurídica Presencial e/ou Virtual - Audiências e Diligências - Cidades de Atuação",
     content: [
-      "Jurídica Presencial e/ou Virtual",
-      "Audiências e Diligências",
-      "Mairiporã-SP",
       "Atibaia-SP",
       "Bragança Paulista-SP",
-      "Piracaia-SP",
-      "Nazaré Paulista-SP",
-      "Jarinu-SP",
-      "Campo Limpo Paulista-SP",
-      "Várzea Paulista-SP",
-      "Jundiaí-SP",
-      "Itatiba-SP",
-      "Louveira-SP",
-      "Vinhedo-SP",
-      "Valinhos-SP",
       "Campinas-SP",
+      "Campo Limpo Paulista-SP",
+      "Itatiba-SP",
+      "Jarinu-SP",
+      "Jundiaí-SP",
+      "Louveira-SP",
+      "Mairiporã-SP",
+      "Nazaré Paulista-SP",
+      "Piracaia-SP",
+      "Valinhos-SP",
+      "Várzea Paulista-SP",
+      "Vinhedo-SP",
     ],
     id: 5,
   },
@@ -66,7 +64,7 @@ const ServiceArea = ({ className = "", title, subTitle }) => {
           <Grid item xs={12} lg={4} sm={6} key={index}>
             <Grid className="serviceWrap">
               <Grid className="serviceIcon">
-                <img src={"/images/blacklogo.png"} alt="" />
+                <img src={"/images/logo-preto.png"} alt="" />
               </Grid>
               <Grid className="serviceContent">
                 <h3>{service.title}</h3>
@@ -87,7 +85,7 @@ const ServiceArea = ({ className = "", title, subTitle }) => {
         <Grid item xs={12} lg={12} sm={12} className="adicional-container">
           <Grid className="serviceWrap">
             <Grid className="serviceIcon">
-              <img src={"/images/blacklogo.png"} alt="" />
+              <img src={"/images/logo-preto.png"} alt="" />
             </Grid>
             <Grid className="serviceContent">
               <h3>{aditionalInfo[0].title}</h3>
