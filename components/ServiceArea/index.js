@@ -30,29 +30,6 @@ const services = [
   },
 ];
 
-const aditionalInfo = [
-  {
-    title: "Correspondência Jurídica Presencial e/ou Virtual - Audiências e Diligências - Cidades de Atuação",
-    content: [
-      "Atibaia-SP",
-      "Bragança Paulista-SP",
-      "Campinas-SP",
-      "Campo Limpo Paulista-SP",
-      "Itatiba-SP",
-      "Jarinu-SP",
-      "Jundiaí-SP",
-      "Louveira-SP",
-      "Mairiporã-SP",
-      "Nazaré Paulista-SP",
-      "Piracaia-SP",
-      "Valinhos-SP",
-      "Várzea Paulista-SP",
-      "Vinhedo-SP",
-    ],
-    id: 5,
-  },
-];
-
 const ServiceArea = ({ className = "", title, subTitle }) => {
   return (
     <Parallax contentClassName={`ourServiceArea ${className}`} strength={200}>
@@ -88,16 +65,60 @@ const ServiceArea = ({ className = "", title, subTitle }) => {
               <img src={"/images/logo-preto.png"} alt="" />
             </Grid>
             <Grid className="serviceContent">
-              <h3>{aditionalInfo[0].title}</h3>
-              <ul className="aditional-list">
-                {aditionalInfo[0].content.map((content) => {
-                  return (
-                    <li>
-                      <p>{content}</p>
-                    </li>
-                  );
-                })}
-              </ul>
+              <h3>
+                Correspondência Jurídica Presencial e/ou Virtual - Audiências e
+                Diligências - Cidades de Atuação
+              </h3>
+              <div className="aditional-list">
+                <ul className="first-list">
+                  <li>
+                    <p> Atibaia-SP </p>
+                  </li>
+                  <li>
+                    <p> Bragança Paulista-SP</p>
+                  </li>
+                  <li>
+                    <p> Campinas-SP</p>
+                  </li>
+                  <li>
+                    <p> Campo Limpo Paulista-SP</p>
+                  </li>
+                  <li>
+                    <p> Itatiba-SP</p>
+                  </li>
+                </ul>
+                <ul className="second-list">
+                  <li>
+                    <p> Jarinu-SP </p>
+                  </li>
+                  <li>
+                    <p> Jundiaí-SP</p>
+                  </li>
+                  <li>
+                    <p> Louveira-SP</p>
+                  </li>
+                  <li>
+                    <p>Mairiporã-SP</p>
+                  </li>
+                  <li>
+                    <p> Nazaré Paulista-SP</p>
+                  </li>
+                </ul>
+                <ul className="third-list">
+                  <li>
+                    <p> Piracaia-SP </p>
+                  </li>
+                  <li>
+                    <p> Valinhos-SP</p>
+                  </li>
+                  <li>
+                    <p> Várzea Paulista-SP</p>
+                  </li>
+                  <li>
+                    <p> Vinhedo-SP</p>
+                  </li>
+                </ul>
+              </div>
             </Grid>
           </Grid>
         </Grid>

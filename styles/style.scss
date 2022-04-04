@@ -1477,19 +1477,42 @@ body {
     .slideWrapper {
         position: relative;
         z-index: 1;
-        height: 800px;
+        height: 100vh;
         display: flex;
         align-items: center;
+
+        @media (max-width:1650px) {
+            height: 800px;
+        }
+
+        @media (max-width:1400px) {
+            height: 700px;
+            padding: 0px 100px;
+        }
 
         @media (max-width:1200px) {
             height: 600px;
             padding: 0px 100px;
         }
 
-        @media (max-width:767px) {
-            height: 450px;
-            padding: 0px 16px;
+        @media (max-width:1000px) {
+            height: 500px;
+            padding: 0px 100px;
+        }
 
+        @media (max-width:800px) {
+            height: 400px;
+            padding: 0px 100px;
+        }
+
+        @media (max-width:600px) {
+            height: 300px;
+            padding: 0px 100px;
+        }
+
+        @media (max-width:400px) {
+            height: 200px;
+            padding: 0px 100px;
         }
 
         p {
@@ -2160,38 +2183,53 @@ body {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
 
+                .first-list{
+                    order: 1;
+                }
+
+                .second-list {
+                    order: 2;
+                    margin-left: 45px;
+                }
+
+                .third-list {
+                    order: 3;
+                    margin-left: 95px;
+                }
                 
                 @media (min-width: 600px) and (max-width: 1280px) {
                     grid-template-columns: 1fr 1fr;
-                }
 
-                li:nth-child(3n) {
-                    margin-left: 100px;
-                    @media (max-width: 1280px) {
+                    .second-list {
                         margin-left: 0;
+                        order: 3;
                     }
-                }
-
-                li:nth-child(3n -1 ) {
-                    margin-left: 55px;
-                    @media (max-width: 1280px) {
-                        margin-left: 0;
+    
+                    .third-list {
+                        order: 2;
+                        margin-left: 95px;
                     }
-                }
-
-                @media (min-width: 600px) and (max-width: 1280px) {
-                    li:nth-child(2n) {
-                        margin-left: 80px;
-                    }
-                    grid-template-columns: 1fr 1fr;
                 }
 
                 @media (max-width: 600px) {
-                    li:nth-child(2n) {
+                    grid-template-columns: 1fr;
+
+                    .first-list{
+                        order: 1;
+                    }
+
+                    .second-list {
+                        order: 2;
                         margin-left: 0;
                     }
-                    grid-template-columns: 1fr;
+    
+                    .third-list {
+                        order: 3;
+                        margin-left: 0;
+                    }
                 }
+
+               
             }
         }
     }
@@ -2567,15 +2605,14 @@ body {
 
         }
     }
-
-
-
 }
 
 .testmonialArea {
-    @media (max-width:1200px) {
-        padding: 0px 16px;
-    }
+    padding: 150px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width:576px) {
         padding-bottom: 100px;
@@ -2590,10 +2627,12 @@ body {
     }
 
     .testimonialContent {
+        margin-left: 50px;
         margin-top: 50px;
 
         @media (max-width:1200px) {
-            margin-top: 0;
+            margin-left: 0;
+            padding: 0 8px;
         }
 
         @media (max-width:768px) {
@@ -2620,25 +2659,6 @@ body {
                 font-size: 25px;
             }
 
-            &::before {
-                content: "";
-                position: absolute;
-                left: -68px;
-                top: 19px;
-                width: 60px;
-                height: 1px;
-                background: #000000;
-
-                @media (max-width:576px) {
-                    left: 50%;
-                    transform: translateX(-50%);
-                    top: 60px;
-                }
-
-                @media (max-width:375px) {
-                    top: 50px;
-                }
-            }
         }
 
         .testmonialSlider {
@@ -2647,7 +2667,6 @@ body {
                     outline: none;
                 }
             }
-
             .slideItem {
                 p {
                     padding: 20px 0 30px;
