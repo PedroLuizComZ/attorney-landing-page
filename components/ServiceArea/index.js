@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: "Advocacia de Apoio Estratégica e/ou de Volume ",
-    content: ["Elaboração de peças processuais e/ou pesquisa jurisprudencial"],
+    content: ["Elaboração de Peças Processuais e/ou Pesquisa Jurisprudencial"],
     id: 2,
   },
   {
@@ -27,6 +27,16 @@ const services = [
       "Projetos e Treinamentos para Departamentos Jurídicos e Escritórios de Advocacia",
     ],
     id: 3,
+  },
+  {
+    title:
+      "Correspondência Jurídica Presencial e/ou Virtual - Audiências e Diligências ",
+    content: [
+      "Análise Prévio do Caso Concreto",
+      "Alinhamento com o Cliente",
+      "Relatório Completo sobre o Ato",
+    ],
+    id: 4,
   },
 ];
 
@@ -59,15 +69,15 @@ const ServiceArea = ({ className = "", title, subTitle }) => {
             </Grid>
           </Grid>
         ))}
-        <Grid item xs={12} lg={12} sm={12} className="adicional-container">
+        <Grid item xs={12} lg={8} sm={12}>
           <Grid className="serviceWrap">
             <Grid className="serviceIcon">
               <img src={"/images/logo-preto.png"} alt="" />
             </Grid>
             <Grid className="serviceContent">
               <h3>
-                Correspondência Jurídica Presencial e/ou Virtual - Audiências e
-                Diligências - Cidades de Atuação
+                Correspondência Jurídica Presencial e/ou Virtual - Cidades de
+                Atuação
               </h3>
               <div className="aditional-list">
                 <ul className="first-list">
@@ -86,14 +96,14 @@ const ServiceArea = ({ className = "", title, subTitle }) => {
                   <li>
                     <p> Itatiba-SP</p>
                   </li>
-                </ul>
-                <ul className="second-list">
                   <li>
                     <p> Jarinu-SP </p>
                   </li>
                   <li>
                     <p> Jundiaí-SP</p>
                   </li>
+                </ul>
+                <ul className="second-list">
                   <li>
                     <p> Louveira-SP</p>
                   </li>
@@ -103,8 +113,6 @@ const ServiceArea = ({ className = "", title, subTitle }) => {
                   <li>
                     <p> Nazaré Paulista-SP</p>
                   </li>
-                </ul>
-                <ul className="third-list">
                   <li>
                     <p> Piracaia-SP </p>
                   </li>
@@ -118,6 +126,7 @@ const ServiceArea = ({ className = "", title, subTitle }) => {
                     <p> Vinhedo-SP</p>
                   </li>
                 </ul>
+
               </div>
             </Grid>
           </Grid>

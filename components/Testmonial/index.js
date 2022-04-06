@@ -21,11 +21,11 @@ const Testmonial = ({ className = '' }) => {
             </Grid>
             <Grid item md={6} sm={12} xs={12}>
                 <Grid className="testimonialContent">
-                    <h2>Case de sucesso</h2>
+                    <h2>Case de Sucesso</h2>
                     <Slider className="testmonialSlider"
                         {...settings}>
                         <Grid className="slideItem">
-                            <p> Controller Jurídico -  Reestruturação de Departamentos Cível e Trabalhista 2011-2016 :</p>
+                            <p> Controller Jurídico -  Reestruturação de Departamentos Cível e Trabalhista: 2011-2016:</p>
                             <ul>
                                 <li>
                                     Readequação de equipe de advogados e estagiários, com viabilização de desenvolvimento de habilidades pessoais e profissionais
