@@ -25,7 +25,7 @@ const Testmonial = ({ className = '' }) => {
                     <Slider className="testmonialSlider"
                         {...settings}>
                         <Grid className="slideItem">
-                            <p> Controller Jurídico -  Reestruturação de Departamentos Cível e Trabalhista: 2011-2016:</p>
+                            <p> Controller Jurídico -  Reestruturação de Departamentos Cível e Trabalhista (2011-2016):</p>
                             <ul>
                                 <li>
                                     Readequação de equipe de advogados e estagiários, com viabilização de desenvolvimento de habilidades pessoais e profissionais
