@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Grid } from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TelegramIcon from "@material-ui/icons/Telegram";
-import CallIcon from "@material-ui/icons/Call";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 const menu = {
@@ -55,11 +54,6 @@ const FooterArea = () => {
               <li>
                 <a href="https://www.linkedin.com/in/renata-da-rocha-fusco-24a3aa20/">
                   <LinkedInIcon />
-                </a>
-              </li>
-              <li>
-                <a href="https://t.me/renatadarochafusco">
-                  <TelegramIcon />
                 </a>
               </li>
               <li>
