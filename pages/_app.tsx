@@ -5,7 +5,7 @@ import "../styles/style.scss";
 import HeaderBottom from "../components/HeaderBottom";
 import FooterArea from "../components/FooterArea";
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: any) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,7 +24,6 @@ const MyApp = ({ Component, pageProps }) => {
       <Component {...pageProps} />
       <FooterArea />
     </>
-
   );
 };
 
